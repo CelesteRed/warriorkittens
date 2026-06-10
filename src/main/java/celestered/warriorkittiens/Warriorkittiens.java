@@ -1,5 +1,6 @@
 package celestered.warriorkittiens;
 
+import celestered.warriorkittiens.item.modItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -20,5 +21,6 @@ public class Warriorkittiens implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+		modItems.registermodItems();
 	}
 }
