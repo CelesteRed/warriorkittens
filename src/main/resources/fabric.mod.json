@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "warriorkittiens",
+	"version": "${version}",
+	"name": "warriorkittiens",
+	"description": "Step back dogs, the cats have came out to play!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT-License",
+	"icon": "assets/warriorkittiens/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"celestered.warriorkittiens.Warriorkittiens"
+		],
+		"client": [
+			"celestered.warriorkittiens.client.WarriorkittiensClient"
+		],
+		"fabric-datagen": [
+			"celestered.warriorkittiens.client.WarriorkittiensDataGenerator"
+		]
+	},
+	"mixins": [
+		"warriorkittiens.mixins.json",
+		{
+			"config": "warriorkittiens.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
